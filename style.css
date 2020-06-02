@@ -84,8 +84,8 @@ a:hover{
 .streamer-item{
     display: grid;
     grid-template-columns: 20% 80%;
-    align-items: left;
-    justify-items: left;
+    align-items: start;
+    justify-items: start;
 }
 .streamer-list .avatar{
     grid-row: 1 / span 2;
@@ -104,6 +104,21 @@ a:hover{
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
 }
+.streamer-list .badge .follow{
+    margin-left: 6px;
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757678;
+    vertical-align: text-top;
+}
+.streamer-list .badge .follow:before{
+    content: ". ";
+    position: absolute;
+    left: -6px;
+    top: -5px;
+    font-size: large;
+}
 .lv::before{
     content: "Lv.";
 }
@@ -116,6 +131,59 @@ a:hover{
     border-radius: 15px;
     text-align: center;
 }
-.streamer-item ul{
-    list-style-type: 20px;
+.streamer-list li{
+    margin-top: 10px;
+}
+.streamer-list .stream-top{
+    position: relative;
+    width: 80px;
+    height: 70px;
+    margin: 0 auto;
+}
+.streamer-list .stream-top .crown{
+    position: absolute;
+    background-image: url('./imgs/crown.png');
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.streamer-list .stream-top .avatar{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.streamer-list .stream-top .brand-center-1{
+    background-image: url('./imgs/band-center-1.png');
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 14px;
+    z-index: 3;
+}
+.streamer-list .stream-top .brand-left-1{
+    background-image: url('./imgs/band-left-1.png');
+    position: absolute;
+    top: 87%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 11px;
+    z-index: 1;
+}
+.streamer-list .stream-top .brand-right-1{
+    background-image: url('./imgs/band-left-1.png');
+    position: absolute;
+    top: 78%;
+    left: 74%;
+    transform: rotate(135deg);
+    width: 13px;
+    height: 11px;
+    z-index: 1;
+
 }
