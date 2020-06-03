@@ -29,21 +29,23 @@
 
         .swiper-slide {
             text-align: center;
-            font-size: 18px;
-
+            margin-right: 10px;
+            
             /* Center slide text vertically */
-            /* display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center; */
+          display: block;
+            
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide img{
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -113,39 +115,65 @@
         </ul>
     </div>
 
-    <!-- <div class="game">
+    <div class="game">
         <h3>Games</h3>
-        <div style="overflow-x:auto;">
-            <table>
-                <td>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img src="imgs/freefire.png" alt="">
                     <h6>Free Fire</h6>
                     <p class="like">Đã yêu thích</p>
-                </td>
-                <td>
-                    <img src="imgs/freefire.png" alt="">
-                    <h6>Free Fire</h6>
-                    <p class="like">300k yêu thích</p>
-                </td>
-                <td>
-                    <img src="imgs/freefire.png" alt="">
-                    <h6>Free Fire</h6>
-                    <p class="like">300k yêu thích</p>
-                </td>
-                <td>
-                    <img src="imgs/freefire.png" alt="">
-                    <h6>Free Fire</h6>
-                    <p class="like">300k yêu thích</p>
-                </td>
-                <td >
+                </div>
+                <div class="swiper-slide">
                     <img src="imgs/freefire.png" alt="">
                     <h6>Free Fire</h6>
                     <p class="like">Đã yêu thích</p>
-                </td>
-            </table>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </div>
 
+    
     <div class="video">
         <h3>Videos</h3>
         <ul class="video-list">
@@ -209,45 +237,44 @@
 
     <div class="game">
         <h3>Play game</h3>
-    </div>
-    <div class="swiper-container game">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide">
-                <img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
-            </div>
-            <div class="swiper-slide"><img src="imgs/game.png" alt="">
-                <h6>Moto XM3 Pool Party</h6>
+        <div class="swiper-container  game-play">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/game.png" alt="" >
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
+                <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </div>
             </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
+    
 
     <!-- <div class="game">
         <h3>Play game</h3>
@@ -278,13 +305,14 @@
     </div> -->
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.game .swiper-container', {
             slidesPerView: 'auto',
-            spaceBetween: 15,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            keyboardControl:true,
+            slideToClickedSlide: true,
+        });
+        var swiper = new Swiper('.game-play', {
+            slidesPerView: 4,
+            spaceBetween: 10,
         });
     </script>
 </body>
