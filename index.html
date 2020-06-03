@@ -15,7 +15,37 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            /* display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; */
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +57,7 @@
         </div>
         <ul class="tab d-flex justify-content-between">
             <li class="tab-item text-center ">
-                <a class="tab-link active" href="index.html">Tất cả</a>
+                <a class="tab-link active" href="#">Tất cả</a>
             </li>
             <li class="tab-item  text-center">
                 <a class="tab-link" href="#">Streamer (3)</a>
@@ -64,8 +94,8 @@
                 </span>
 
             </li>
-            <li class="streamer-item">
-                <div class="stream-top avatar">
+            <li class="streamer-item stream-top ">
+                <div class="avatar-top">
                     <div class="crown"></div>
                     <img src="imgs/Avatar.png" alt="" class="avatar">
                     <div class="brand-center-1"></div>
@@ -77,11 +107,186 @@
                     <span class="lv">30</span>
                     <img src="./imgs/badge.png" alt="">
                     <img src="./imgs/badge.png" alt="">
-                    <span class="follow">Đang theo dõi</span>
+                    <span class="follow">120k theo dõi</span>
                 </span>
             </li>
         </ul>
     </div>
+
+    <!-- <div class="game">
+        <h3>Games</h3>
+        <div style="overflow-x:auto;">
+            <table>
+                <td>
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </td>
+                <td>
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">300k yêu thích</p>
+                </td>
+                <td>
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">300k yêu thích</p>
+                </td>
+                <td>
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">300k yêu thích</p>
+                </td>
+                <td >
+                    <img src="imgs/freefire.png" alt="">
+                    <h6>Free Fire</h6>
+                    <p class="like">Đã yêu thích</p>
+                </td>
+            </table>
+        </div>
+    </div> -->
+
+    <div class="video">
+        <h3>Videos</h3>
+        <ul class="video-list">
+            <li class="video-item">
+                <div class="video-item-left">
+                    <span class="game-name">PUBG</span>
+                    <img src="imgs/video-image.png" alt="" class="video-image">
+                    <span class="amount-live">15.1K</span>
+                </div>
+                <div class="video-item-right">
+                    <h6 class="video-name">BLACKPINK - 'Kill This Love' 0412 SBS Inkigayo</h6>
+                    <h6 class="channel">BLACKPINK</h6>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="video-item-left">
+                    <span class="game-name">PUBG</span>
+                    <img src="imgs/video-image.png" alt="" class="video-image">
+                    <span class="amount-live">15.1K</span>
+                </div>
+                <div class="video-item-right">
+                    <h6 class="video-name">BLACKPINK - 'Kill This Love' 0412 SBS Inkigayo</h6>
+                    <h6 class="channel">BLACKPINK</h6>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="video-item-left">
+                    <span class="game-name">PUBG</span>
+                    <img src="imgs/video-image.png" alt="" class="video-image">
+                    <span class="amount-live">15.1K</span>
+                </div>
+                <div class="video-item-right">
+                    <h6 class="video-name">BLACKPINK - 'Kill This Love' 0412 SBS Inkigayo</h6>
+                    <h6 class="channel">BLACKPINK</h6>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="video-item-left">
+                    <span class="game-name">PUBG</span>
+                    <img src="imgs/video-image.png" alt="" class="video-image">
+                    <span class="amount-live">15.1K</span>
+                </div>
+                <div class="video-item-right">
+                    <h6 class="video-name">BLACKPINK - 'Kill This Love' 0412 SBS Inkigayo</h6>
+                    <h6 class="channel">BLACKPINK</h6>
+                </div>
+            </li>
+            <li class="video-item">
+                <div class="video-item-left">
+                    <span class="game-name">PUBG</span>
+                    <img src="imgs/video-image.png" alt="" class="video-image">
+                    <span class="amount-live">15.1K</span>
+                </div>
+                <div class="video-item-right">
+                    <h6 class="video-name">BLACKPINK - 'Kill This Love' 0412 SBS Inkigayo</h6>
+                    <h6 class="channel">BLACKPINK</h6>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="game">
+        <h3>Play game</h3>
+    </div>
+    <div class="swiper-container game">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide">
+                <img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+            <div class="swiper-slide"><img src="imgs/game.png" alt="">
+                <h6>Moto XM3 Pool Party</h6>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- <div class="game">
+        <h3>Play game</h3>
+        <div style="overflow-x:auto;">
+            <table>
+                <td>
+                    <img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </td>
+                <td>
+                    <img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </td>
+                <td>
+                    <img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </td>
+                <td>
+                    <img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </td>
+                <td>
+                    <img src="imgs/game.png" alt="">
+                    <h6>Moto XM3 Pool Party</h6>
+                </td>
+            </table>
+        </div>
+    </div> -->
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 15,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
